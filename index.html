@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h2>calc</h2>
+                </div>
+                <div class="right">
+                    <div class="text">
+                        <p>THEME</p>
+                    </div>
+                    <div class="num">
+                        <div class="number">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>
+
+                        <div>
+                            <label class="switch">
+                                <input type="range" id="theme" />
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="screen">
+                <h1 class="display" id="screen">0</h1>
+            </div>
+            <div class="calc_body">
+                <div class="first">
+                    <button onclick="sendNum('7')">7</button>
+                    <button onclick="sendNum('8')">8</button>
+                    <button onclick="sendNum('9')">9</button>
+                    <button class="blue" onclick="delNum()">DEL</button>
+                </div>
+                <div class="second">
+                    <button onclick="sendNum('4')">4</button>
+                    <button onclick="sendNum('5')">5</button>
+                    <button onclick="sendNum('6')">6</button>
+                    <button onclick="sendNum('+')">+</button>
+                </div>
+                <div class="third">
+                    <button onclick="sendNum('1')">1</button>
+                    <button onclick="sendNum('2')">2</button>
+                    <button onclick="sendNum('3')">3</button>
+                    <button onclick="sendNum('-')">-</button>
+                </div>
+                <div class="fifth">
+                    <button onclick="sendNum('.')">.</button>
+                    <button onclick="sendNum('0')">0</button>
+                    <button onclick="sendNum('/')">/</button>
+                    <button onclick="sendNum('*')">*</button>
+                </div>
+                <div class="sixth">
+                    <button class="blue" onclick="clearScr('')">RESET</button>
+                    <button class="red" onclick="equalTo()">=</button>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/JS.js"></script> -->
+</body>
+
+</html>
